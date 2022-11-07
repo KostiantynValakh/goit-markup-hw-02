@@ -1,0 +1,209 @@
+            /* text color */
+    /* 
+    #212121 headlines text color
+     #2196F3 hover text color
+     #757575 description text color
+     #F5F4FA bg color section fon our team
+     #2F303A bg color footer 
+     */
+:root{
+    --headlines-text-color: #212121;
+    --hover-text-color: #2196F3;
+    --description-text-color: #757575;
+    --bg-color-section: #F5F4FA;
+    --bg-color-footer: #2F303A;
+    --font-family-Releway: 'Raleway', sans-serif;
+    --font-family-Roboto: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--font-family-Roboto);
+    color: var(--headlines-text-color);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.03em;
+}
+
+/*  HEADER */
+
+.logo{
+    font-family: var(--font-family-Releway);
+    font-weight: 700;
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+}
+.logo span{
+    color: var(--hover-text-color);
+}
+header li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+}
+.link{
+    color: var(--headlines-text-color);
+    text-decoration: none;
+}
+.link:hover,
+.link:focus{
+    color: var(--hover-text-color);
+}
+.contact.email,
+.contact.tel{
+    color: var(--description-text-color);
+    text-decoration: none;
+}
+.contact.email:hover,
+.contact.email:focus,
+.contact.tel:hover,
+.contact.tel:focus{
+    color: var(--hover-text-color);
+}
+
+/* блок герой */
+
+.hero-bg{
+    height: 600px;
+    background-color: #2F303A;
+}
+.hero-bg h1{
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.363;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 200px;
+}
+.button{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--hover-text-color);
+    width: 216px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Наші переваги */
+
+.features{
+    list-style: none;
+
+}
+.features.list li{
+    display: inline-block;
+}
+.features.list h3{
+    line-height: 1.142;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.features.list p{
+    color: var(--description-text-color);
+    line-height: 1.71;
+    font-size: 14px;
+}
+/*  Чим ми займаємось */
+.our-work h2{
+    line-height: 1.166;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.our-work.list{
+    list-style: none;
+}
+
+/*  Наша команда */
+
+.our-team{
+    background-color: var(--bg-color-section);
+}
+.our-team h2{
+    line-height: 1.166;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.our-team.card{
+    list-style: none;
+    background-color: #ffffff;
+}
+.card h3{
+    font-weight: 500;
+    line-height: 1.125;
+    text-align: center;
+}
+.card p{
+    line-height: 1.125;
+    color: var(--description-text-color);
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--bg-color-footer);
+}
+.address li{
+    list-style: none;
+}
+.address a{
+    font-size: 14px;
+    line-height: 1.714;
+    color: #ffffff;
+    opacity: 0.6;
+    text-decoration: none;
+    font-style: normal;
+}
+.address a:hover,
+.address a:focus{
+    opacity: 1;
+}
+
+/* PORTFOLIO */
+
+.sort-menu{
+    list-style: none;
+}
+.sort-menu.link{
+    width: 130px;
+    height: 38px;
+    background-color: var(--bg-color-section);
+    color: var(--headlines-text-color);
+    font-weight: 500;
+    line-height: 1.625;
+    cursor: pointer;
+    font-family: inherit;
+}
+.sort-menu.link:hover,
+.sort-menu.link:focus{
+    color: #ffffff;
+    background-color: var(--hover-text-color);
+}
+
+/* Приклади наших робіт */
+
+.box{
+    list-style: none;
+}
+.box h2{
+    font-weight: 700;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--headlines-text-color);
+}
+.box p{
+    line-height: 1.875;
+    color: var(--description-text-color);
+}
